@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "descartes",
+	"version": "${version}",
+	"name": "Descartes",
+	"description": "Enhancement for the original Valkyrien Skies 2 mod that solves issues related to the coordinate system and player interaction",
+	"authors": [
+		"altprtcl"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/descartes",
+		"sources": "https://github.com/altprtcl/descartes"
+	},
+	"license": "MIT",
+	"icon": "assets/descartes/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.altprtcl.descartes.Descartes"
+		],
+		"client": [
+			"com.altprtcl.descartes.DescartesClient"
+		],
+		"fabric-datagen": [
+			"com.altprtcl.descartes.DescartesDataGenerator"
+		]
+	},
+	"mixins": [
+		"descartes.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
